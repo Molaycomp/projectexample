@@ -12,7 +12,9 @@ public static void main(String args[]){
    Statement st=c.createStatement();  
    ResultSet rs=st.executeQuery("select * from student");  
     
-   while(rs.next()){  
+   while(rs.next())
+   
+   {  
     System.out.println(rs.getString(1));  
    }  
   
